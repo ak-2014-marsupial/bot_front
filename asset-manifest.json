@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/bot_front.git/static/css/main.682ce35b.css",
-    "main.js": "/bot_front.git/static/js/main.b0658adc.js",
-    "index.html": "/bot_front.git/index.html",
-    "main.682ce35b.css.map": "/bot_front.git/static/css/main.682ce35b.css.map",
-    "main.b0658adc.js.map": "/bot_front.git/static/js/main.b0658adc.js.map"
+    "main.css": "/bot_front/static/css/main.682ce35b.css",
+    "main.js": "/bot_front/static/js/main.b0658adc.js",
+    "index.html": "/bot_front/index.html",
+    "main.682ce35b.css.map": "/bot_front/static/css/main.682ce35b.css.map",
+    "main.b0658adc.js.map": "/bot_front/static/js/main.b0658adc.js.map"
   },
   "entrypoints": [
     "static/css/main.682ce35b.css",
