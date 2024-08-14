@@ -1,4 +1,4 @@
-const staticCacheName = "static-cache-v0";
+const staticCacheName = "static-cache-v01";
 
 const staticAssets = [
     "./logo192.png",
@@ -15,8 +15,14 @@ self.addEventListener("install", async event => {
 })
 
 self.addEventListener("activate", async event => {
+    const cachesKeys=await  caches.keys();
+    const checkKeys = cachesKeys.map(async key=>{
+        if(staticCacheName !==key){
+            await caches.delete(key)
+        }
+    });
+    await Promise.all(checkKeys);
     console.log("Service worker has been activated");
-
 })
 
 self.addEventListener("fetch", event => {
